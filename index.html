@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mountain Bridge Investment Limited is a strategic real estate firm focused on property development, land acquisition, and investment management.">
+    <meta name="theme-color" content="#0047AB">
+    <link rel="canonical" href="https://your-domain.com/">
+
+    <meta property="og:title" content="Mountain Bridge Investment Limited">
+    <meta property="og:description" content="Maximizing value through strategic real estate investment, development, and transparent governance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:image" content="https://picsum.photos/seed/modern-architecture/1200/630.jpg">
+    <meta property="og:image:alt" content="Modern architecture">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mountain Bridge Investment Limited">
+    <meta name="twitter:description" content="Maximizing value through strategic real estate investment, development, and transparent governance.">
+    <meta name="twitter:image" content="https://picsum.photos/seed/modern-architecture/1200/630.jpg">
+    <title>Mountain Bridge Investment Limited - Strategic Real Estate Investment</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Mountain Bridge Investment Limited",
+            "url": "https://your-domain.com/",
+            "description": "Strategic real estate investment firm focused on property development, land acquisition, and investment management.",
+            "sameAs": []
+        }
+    </script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: 1rem;
+            top: 0.75rem;
+            z-index: 2000;
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-160%);
+            transition: transform 0.2s ease;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        :focus-visible {
+            outline: 3px solid rgba(0, 71, 171, 0.35);
+            outline-offset: 3px;
+        }
+
+        /* Color Variables */
+        :root {
+            --primary-blue: #0047AB;
+            --secondary-blue: #003d8f;
+            --accent-blue: #0056cc;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --text-dark: #2c3e50;
+            --text-light: #6c757d;
+        }
+
+        /* Header/Navbar Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo:hover {
+            color: var(--accent-blue);
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 32px;
+            }
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            padding: 0.25rem;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-blue);
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background-image: url('logo.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.5;
+            z-index: 0;
+            pointer-events: none;
+            filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 5%;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease 0.4s;
+            animation-fill-mode: both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+            background: var(--light-gray);
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 5%;
+            background: var(--light-gray);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary-blue);
+        }
+
+        .about-content {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            background: var(--white);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+        }
+
+        .service-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Value Proposition Section */
+        .value-prop {
+            padding: 5rem 5%;
+            background: var(--light-gray);
+        }
+
+        .value-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .check-icon {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .value-item h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .value-item p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            background: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .contact .section-title {
+            color: var(--white);
+        }
+
+        .contact .section-title::after {
+            background: var(--white);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--white);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .submit-btn {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        .toast {
+            position: fixed;
+            left: 50%;
+            bottom: 1.25rem;
+            transform: translateX(-50%);
+            background: rgba(18, 25, 38, 0.92);
+            color: var(--white);
+            padding: 0.85rem 1rem;
+            border-radius: 12px;
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+            max-width: min(520px, calc(100% - 2rem));
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 2500;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(-4px);
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 1.25rem;
+            bottom: 1.25rem;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            background: var(--white);
+            color: var(--primary-blue);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(10px);
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            z-index: 2000;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .inquire-now {
+            position: fixed;
+            left: 1.25rem;
+            bottom: 1.25rem;
+            background: var(--primary-blue);
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.85rem 1.1rem;
+            border-radius: 999px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+            opacity: 0;
+            transform: translateY(10px);
+            pointer-events: none;
+            transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+            z-index: 2000;
+        }
+
+        .inquire-now:hover {
+            background: var(--accent-blue);
+        }
+
+        .inquire-now.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        .testimonials {
+            padding: 5rem 5%;
+            background: var(--white);
+        }
+
+        .testimonial-shell {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(0, 71, 171, 0.06), rgba(0, 71, 171, 0.02));
+            border: 1px solid rgba(0, 71, 171, 0.12);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-viewport {
+            overflow: hidden;
+        }
+
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.45s ease;
+            will-change: transform;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 2.5rem;
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .testimonial-quote {
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        .testimonial-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1rem;
+            align-items: baseline;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .testimonial-role {
+            color: var(--text-light);
+        }
+
+        .testimonial-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.25rem;
+            background: rgba(255, 255, 255, 0.75);
+            border-top: 1px solid rgba(0, 71, 171, 0.12);
+        }
+
+        .testimonial-buttons {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .icon-btn {
+            border: 1px solid rgba(0, 71, 171, 0.18);
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 0.55rem 0.8rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+            font-weight: 600;
+        }
+
+        .icon-btn:hover {
+            transform: translateY(-1px);
+            background: var(--light-gray);
+        }
+
+        .dots {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 71, 171, 0.35);
+            background: transparent;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .dot.active {
+            background: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+
+        .partners {
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            align-items: center;
+            opacity: 0.9;
+        }
+
+        .partner-chip {
+            background: var(--light-gray);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 0.9rem 1rem;
+            border-radius: 12px;
+            text-align: center;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .faq {
+            padding: 5rem 5%;
+            background: var(--light-gray);
+        }
+
+        .faq-list {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            gap: 1rem;
+        }
+
+        details.faq-item {
+            background: var(--white);
+            border-radius: 14px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        details.faq-item summary {
+            list-style: none;
+            padding: 1.25rem 1.25rem;
+            cursor: pointer;
+            font-weight: 700;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        details.faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-answer {
+            padding: 0 1.25rem 1.25rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        .faq-chevron {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(0, 71, 171, 0.08);
+            display: grid;
+            place-items: center;
+            color: var(--primary-blue);
+            flex-shrink: 0;
+            transition: transform 0.2s ease;
+        }
+
+        details[open] .faq-chevron {
+            transform: rotate(180deg);
+        }
+
+        .trust-box {
+            margin-top: 1.25rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 14px;
+            padding: 1.25rem;
+            display: grid;
+            gap: 0.85rem;
+        }
+
+        .trust-item {
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .trust-badge {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.18);
+            display: grid;
+            place-items: center;
+            flex-shrink: 0;
+            font-weight: 800;
+        }
+
+        .field-error {
+            display: none;
+            margin-top: 0.4rem;
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 0.92rem;
+        }
+
+        .field-error.show {
+            display: block;
+        }
+
+        .form-group input[aria-invalid="true"],
+        .form-group textarea[aria-invalid="true"] {
+            border-color: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .value-list {
+                grid-template-columns: 1fr;
+            }
+
+            .inquire-now {
+                left: 1rem;
+                right: 1rem;
+                width: calc(100% - 2rem);
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                padding: 2rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html:focus-within {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <img src="logo.svg" alt="Mountain Bridge Investment Ltd logo" class="logo-img">
+                <span>Mountain Bridge Investment Ltd</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Maximizing Value Through Strategic Real Estate Investment</h1>
+            <p>Bridging the gap between quality construction, valuable land assets, and strategic financial opportunities</p>
+            <a href="#services" class="cta-button" id="ctaExplore">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Who We Are</h2>
+            <div class="about-content">
+                <p>Mountain Bridge Investment Limited is a dynamic real estate firm focused on maximizing value through strategic investment and development within the property sector. We aim to be a trusted leader in property investment, ensuring transparent governance and maximizing asset appreciation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Business Lines</h2>
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Property Construction & Development</h3>
+                    <p>Planning, financing, and constructing high-quality residential and commercial properties. We deliver modern, structurally sound developments that meet market demand.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <div class="service-icon">📍</div>
+                    <h3>Land Acquisition & Trading</h3>
+                    <p>Strategically acquiring undeveloped land with high potential and offering vetted, legally clear land to private buyers and developers.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Investment Management</h3>
+                    <p>Structuring capital investments in construction and land deals, providing opportunities for partners to achieve superior returns on investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-prop">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="value-list">
+                <div class="value-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h4>Expertise in Market Analysis</h4>
+                        <p>Deep understanding of market trends and thorough due diligence processes.</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h4>Safe and Efficient Transactions</h4>
+                        <p>Streamlined processes ensuring secure and timely property transactions.</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h4>High-Quality Modern Developments</h4>
+                        <p>Commitment to excellence in construction and contemporary design standards.</p>
+                    </div>
+                </div>
+
+                <div class="value-item">
+                    <div class="check-icon">✓</div>
+                    <div>
+                        <h4>Transparent Governance</h4>
+                        <p>Open communication and ethical practices ensuring investor confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Trusted Partnerships</h2>
+            <div class="testimonial-shell" aria-roledescription="carousel" aria-label="Testimonials">
+                <div class="testimonial-viewport">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <article class="testimonial-slide" aria-label="Testimonial 1">
+                            <div class="testimonial-quote">“Mountain Bridge Investment approaches every deal with rigorous due diligence and clear communication. Their execution is structured, disciplined, and investor-focused.”</div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Investment Partner</div>
+                                <div class="testimonial-role">Capital Allocation</div>
+                            </div>
+                        </article>
+                        <article class="testimonial-slide" aria-label="Testimonial 2">
+                            <div class="testimonial-quote">“From land verification to project delivery, the team consistently prioritizes quality standards and transparent reporting. A dependable partner for long-term value creation.”</div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Development Collaborator</div>
+                                <div class="testimonial-role">Project Delivery</div>
+                            </div>
+                        </article>
+                        <article class="testimonial-slide" aria-label="Testimonial 3">
+                            <div class="testimonial-quote">“Efficient processes, legally clear land sourcing, and strong governance. Mountain Bridge Investment provides confidence across each stage of the transaction.”</div>
+                            <div class="testimonial-meta">
+                                <div class="testimonial-name">Private Buyer</div>
+                                <div class="testimonial-role">Land Acquisition</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <div class="testimonial-buttons">
+                        <button class="icon-btn" type="button" id="testimonialPrev" aria-label="Previous testimonial">Prev</button>
+                        <button class="icon-btn" type="button" id="testimonialNext" aria-label="Next testimonial">Next</button>
+                    </div>
+                    <div class="dots" id="testimonialDots" aria-label="Testimonial navigation"></div>
+                </div>
+            </div>
+
+            <div class="partners" aria-label="Trust highlights">
+                <div class="partner-chip">Verified Due Diligence</div>
+                <div class="partner-chip">Structured Deal Flow</div>
+                <div class="partner-chip">Quality Development</div>
+                <div class="partner-chip">Transparent Governance</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>
+                        <span>How do you evaluate land and development opportunities?</span>
+                        <span class="faq-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div class="faq-answer">We combine market analysis, title verification, site inspection, feasibility assessments, and risk review to ensure opportunities align with investor objectives and regulatory requirements.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>What makes your transactions safer and more efficient?</span>
+                        <span class="faq-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div class="faq-answer">We use standardized documentation, clear timelines, vetted counterparties, and transparent reporting. Our approach reduces delays while maintaining strict compliance and governance.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Do you offer partnership or co-investment structures?</span>
+                        <span class="faq-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div class="faq-answer">Yes. We structure investment participation for qualified partners across construction and land transactions. Terms are defined through transparent governance, risk controls, and aligned return expectations.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>How do you keep investors informed?</span>
+                        <span class="faq-chevron" aria-hidden="true">⌄</span>
+                    </summary>
+                    <div class="faq-answer">We provide clear updates, milestone reporting, and documentation access for each project stage, supporting informed decision-making and strong oversight.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ready to invest?</h3>
+                    <p>Contact Mountain Bridge Investment Limited today to explore strategic real estate opportunities and discover how we can help you achieve your investment goals.</p>
+                    <div class="trust-box" aria-label="Trust and governance">
+                        <div class="trust-item">
+                            <div class="trust-badge" aria-hidden="true">✓</div>
+                            <div>
+                                <div><strong>Legally vetted transactions</strong></div>
+                                <div>Clear documentation and verification-first land sourcing.</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-badge" aria-hidden="true">✓</div>
+                            <div>
+                                <div><strong>Transparent governance</strong></div>
+                                <div>Structured reporting designed to protect investor confidence.</div>
+                            </div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-badge" aria-hidden="true">✓</div>
+                            <div>
+                                <div><strong>Quality-focused delivery</strong></div>
+                                <div>Modern standards for construction, oversight, and execution.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-endpoint="" novalidate>
+                    <div class="visually-hidden" aria-hidden="true">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required aria-describedby="nameError" aria-invalid="false">
+                        <div class="field-error" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required aria-describedby="emailError" aria-invalid="false">
+                        <div class="field-error" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" required aria-describedby="messageError" aria-invalid="false"></textarea>
+                        <div class="field-error" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mountain Bridge Investment Limited. All rights reserved.</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <a class="inquire-now" id="inquireNow" href="#contact">Inquire Now</a>
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const toastEl = document.getElementById('toast');
+        const backToTopBtn = document.getElementById('backToTop');
+        const inquireNowBtn = document.getElementById('inquireNow');
+        const contactSection = document.getElementById('contact');
+
+        window.dataLayer = window.dataLayer || [];
+        const track = (event, data = {}) => {
+            window.dataLayer.push({ event, ...data });
+        };
+
+        let toastTimer;
+        const showToast = (message) => {
+            if (!toastEl) return;
+            toastEl.textContent = message;
+            toastEl.classList.add('show');
+            window.clearTimeout(toastTimer);
+            toastTimer = window.setTimeout(() => {
+                toastEl.classList.remove('show');
+            }, 3500);
+        };
+
+        let intentDetected = false;
+        let intentCtaImpressionTracked = false;
+        const investmentIntentRegex = /\b(invest|investment|investor|investing|partnership|partner|co-?invest|joint\s+venture|funding|capital|roi|return\s+on\s+investment)\b/i;
+
+        const detectInvestmentIntent = (text) => investmentIntentRegex.test(String(text || ''));
+
+        const isNearContact = () => {
+            if (!contactSection) return false;
+            const rect = contactSection.getBoundingClientRect();
+            return rect.top < window.innerHeight * 0.45;
+        };
+
+        const updateInquireNowVisibility = () => {
+            if (!inquireNowBtn) return;
+            const shouldShow = intentDetected && !isNearContact();
+            inquireNowBtn.classList.toggle('show', shouldShow);
+
+            if (shouldShow && !intentCtaImpressionTracked) {
+                intentCtaImpressionTracked = true;
+                track('inquire_now_impression');
+            }
+        };
+
+        if (inquireNowBtn) {
+            inquireNowBtn.addEventListener('click', () => {
+                track('inquire_now_click');
+            });
+        }
+
+        const setMenuOpen = (open) => {
+            navLinks.classList.toggle('active', open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        };
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.contains('active');
+            setMenuOpen(!isOpen);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                setMenuOpen(false);
+            }
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navLinks.classList.contains('active')) return;
+            const clickedInsideNav = navLinks.contains(e.target) || menuToggle.contains(e.target);
+            if (!clickedInsideNav) {
+                setMenuOpen(false);
+            }
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    setMenuOpen(false);
+                }
+            });
+        });
+
+        const ctaExplore = document.getElementById('ctaExplore');
+        if (ctaExplore) {
+            ctaExplore.addEventListener('click', () => {
+                track('cta_click', { cta: 'explore_services' });
+            });
+        }
+
+        // Header Scroll Effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = 'var(--white)';
+                header.style.backdropFilter = 'none';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', () => {
+                track('back_to_top_click');
+                window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+            });
+        }
+
+        const updateBackToTop = () => {
+            if (!backToTopBtn) return;
+            const show = window.scrollY > 500;
+            backToTopBtn.classList.toggle('show', show);
+        };
+
+        updateBackToTop();
+        window.addEventListener('scroll', () => {
+            updateBackToTop();
+            updateInquireNowVisibility();
+        }, { passive: true });
+
+        // Testimonials carousel
+        const testimonialTrack = document.getElementById('testimonialTrack');
+        const testimonialDots = document.getElementById('testimonialDots');
+        const testimonialPrev = document.getElementById('testimonialPrev');
+        const testimonialNext = document.getElementById('testimonialNext');
+        const testimonialSlides = testimonialTrack ? Array.from(testimonialTrack.children) : [];
+        let testimonialIndex = 0;
+        let testimonialInterval;
+
+        const renderDots = () => {
+            if (!testimonialDots) return;
+            testimonialDots.innerHTML = '';
+            testimonialSlides.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'dot' + (idx === testimonialIndex ? ' active' : '');
+                btn.setAttribute('aria-label', `Go to testimonial ${idx + 1}`);
+                btn.addEventListener('click', () => {
+                    setTestimonialIndex(idx);
+                    track('testimonial_dot_click', { index: idx + 1 });
+                });
+                testimonialDots.appendChild(btn);
+            });
+        };
+
+        const setTestimonialIndex = (idx) => {
+            if (!testimonialTrack || testimonialSlides.length === 0) return;
+            testimonialIndex = (idx + testimonialSlides.length) % testimonialSlides.length;
+            testimonialTrack.style.transform = `translateX(-${testimonialIndex * 100}%)`;
+            if (testimonialDots) {
+                Array.from(testimonialDots.children).forEach((dot, i) => {
+                    dot.classList.toggle('active', i === testimonialIndex);
+                });
+            }
+        };
+
+        const startTestimonials = () => {
+            if (prefersReducedMotion || testimonialSlides.length <= 1) return;
+            stopTestimonials();
+            testimonialInterval = window.setInterval(() => {
+                setTestimonialIndex(testimonialIndex + 1);
+            }, 7000);
+        };
+
+        const stopTestimonials = () => {
+            if (!testimonialInterval) return;
+            window.clearInterval(testimonialInterval);
+            testimonialInterval = undefined;
+        };
+
+        if (testimonialSlides.length > 0) {
+            renderDots();
+            setTestimonialIndex(0);
+
+            if (testimonialPrev) {
+                testimonialPrev.addEventListener('click', () => {
+                    setTestimonialIndex(testimonialIndex - 1);
+                    track('testimonial_prev');
+                });
+            }
+
+            if (testimonialNext) {
+                testimonialNext.addEventListener('click', () => {
+                    setTestimonialIndex(testimonialIndex + 1);
+                    track('testimonial_next');
+                });
+            }
+
+            const shell = testimonialTrack.closest('.testimonial-shell');
+            if (shell) {
+                shell.addEventListener('mouseenter', stopTestimonials);
+                shell.addEventListener('mouseleave', startTestimonials);
+                shell.addEventListener('focusin', stopTestimonials);
+                shell.addEventListener('focusout', startTestimonials);
+            }
+
+            startTestimonials();
+        }
+
+        // FAQ accordion: keep one open at a time
+        const faqItems = Array.from(document.querySelectorAll('details.faq-item'));
+        faqItems.forEach((item, index) => {
+            item.addEventListener('toggle', () => {
+                if (!item.open) return;
+                faqItems.forEach((other) => {
+                    if (other !== item) other.open = false;
+                });
+                track('faq_open', { index: index + 1 });
+            });
+        });
+
+        // Contact form
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const companyField = document.getElementById('company');
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const messageField = document.getElementById('message');
+
+        const nameError = document.getElementById('nameError');
+        const emailError = document.getElementById('emailError');
+        const messageError = document.getElementById('messageError');
+
+        const setFieldError = (field, errorEl, message) => {
+            if (!field || !errorEl) return;
+            const hasError = Boolean(message);
+            field.setAttribute('aria-invalid', hasError ? 'true' : 'false');
+            errorEl.textContent = message || '';
+            errorEl.classList.toggle('show', hasError);
+        };
+
+        const validateEmail = (value) => {
+            const trimmed = String(value || '').trim();
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed);
+        };
+
+        const validateForm = () => {
+            const name = nameField ? nameField.value.trim() : '';
+            const email = emailField ? emailField.value.trim() : '';
+            const message = messageField ? messageField.value.trim() : '';
+
+            setFieldError(nameField, nameError, name ? '' : 'Please enter your name.');
+            setFieldError(emailField, emailError, email ? (validateEmail(email) ? '' : 'Please enter a valid email address.') : 'Please enter your email.');
+            setFieldError(messageField, messageError, message ? '' : 'Please enter a short message.');
+
+            return Boolean(name) && Boolean(email) && validateEmail(email) && Boolean(message);
+        };
+
+        const setSubmitting = (submitting) => {
+            if (!submitBtn) return;
+            submitBtn.disabled = submitting;
+            submitBtn.textContent = submitting ? 'Sending…' : 'Send Message';
+        };
+
+        if (contactForm) {
+            ['input', 'blur'].forEach((evt) => {
+                contactForm.addEventListener(evt, () => {
+                    validateForm();
+                }, true);
+            });
+
+            if (messageField) {
+                ['input', 'change'].forEach((evt) => {
+                    messageField.addEventListener(evt, () => {
+                        const detected = detectInvestmentIntent(messageField.value);
+                        if (detected && !intentDetected) {
+                            track('investment_intent_detected', { source: 'message_field' });
+                        }
+                        intentDetected = detected;
+                        updateInquireNowVisibility();
+                    });
+                });
+            }
+
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                if (companyField && companyField.value.trim()) {
+                    track('contact_spam_blocked');
+                    contactForm.reset();
+                    showToast('Thank you. Your message has been received.');
+                    return;
+                }
+
+                const ok = validateForm();
+                if (!ok) {
+                    track('contact_validation_failed');
+                    showToast('Please check the form and try again.');
+                    const firstInvalid = contactForm.querySelector('[aria-invalid="true"]');
+                    if (firstInvalid) firstInvalid.focus();
+                    return;
+                }
+
+                if (messageField && detectInvestmentIntent(messageField.value)) {
+                    intentDetected = true;
+                    updateInquireNowVisibility();
+                }
+
+                const endpoint = contactForm.getAttribute('data-endpoint') || '';
+                const formData = new FormData(contactForm);
+
+                track('contact_submit');
+                setSubmitting(true);
+
+                try {
+                    if (endpoint) {
+                        const res = await fetch(endpoint, {
+                            method: 'POST',
+                            headers: { 'Accept': 'application/json' },
+                            body: formData
+                        });
+
+                        if (!res.ok) {
+                            throw new Error(`Request failed: ${res.status}`);
+                        }
+
+                        track('contact_submit_success');
+                        showToast('Thanks — your message has been sent. We will contact you shortly.');
+                        contactForm.reset();
+                        setFieldError(nameField, nameError, '');
+                        setFieldError(emailField, emailError, '');
+                        setFieldError(messageField, messageError, '');
+                    } else {
+                        track('contact_submit_demo');
+                        showToast('Thanks — your message is ready to send. Add a form endpoint to enable delivery.');
+                        contactForm.reset();
+                        setFieldError(nameField, nameError, '');
+                        setFieldError(emailField, emailError, '');
+                        setFieldError(messageField, messageError, '');
+                    }
+                } catch (err) {
+                    track('contact_submit_error');
+                    showToast('Sorry — something went wrong. Please try again later.');
+                } finally {
+                    setSubmitting(false);
+                }
+            });
+        }
+
+        updateInquireNowVisibility();
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards and value items
+        document.querySelectorAll('.service-card, .value-item, .testimonial-shell, details.faq-item, .partner-chip').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
