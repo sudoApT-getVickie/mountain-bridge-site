@@ -19,7 +19,8 @@
     <meta name="twitter:description" content="Maximizing value through strategic real estate investment, development, and transparent governance.">
     <meta name="twitter:image" content="https://picsum.photos/seed/modern-architecture/1200/630.jpg">
     <title>Mountain Bridge Investment Limited - Strategic Real Estate Investment</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
+    
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -201,24 +202,6 @@
             overflow: hidden;
         }
 
-        /* .hero::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            height: 80%;
-            background-image: url('logo.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            opacity: 1.0;
-            z-index: 0;
-            pointer-events: none;
-            filter: brightness(0) invert(1) drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
-        } */
-
         .hero-content {
             max-width: 1400px;
             margin: 0 auto;
@@ -313,7 +296,7 @@
         /* Services Section */
         .services {
             padding: 5rem 5%;
-            background: var(--white);
+            background: var(--white); 
         }
 
         .services-grid {
@@ -324,10 +307,10 @@
         }
 
         .service-card {
-            background: var(--white);
+            background: var(--light-gray); /* Changed to Gray for contrast */
             padding: 2.5rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             text-align: center;
             transition: all 0.3s ease;
             border: 2px solid transparent;
@@ -337,6 +320,7 @@
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
             border-color: var(--primary-blue);
+            background: var(--white);
         }
 
         .service-icon {
@@ -366,7 +350,7 @@
         /* Value Proposition Section */
         .value-prop {
             padding: 5rem 5%;
-            background: var(--light-gray);
+            background: var(--white); /* Changed to White for alternating pattern */
         }
 
         .value-list {
@@ -602,7 +586,6 @@
             background: var(--white);
         }
 
-       
         .testimonial-viewport {
             overflow: hidden;
         }
@@ -642,105 +625,106 @@
             display: flex;
             gap: 0.75rem;
         }
-/* --- NEW Testimonial Grid Styles (From Image) --- */
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
-    gap: 1.5rem;
-    margin-top: 3rem;
-}
+        
+        /* --- NEW Testimonial Grid Styles --- */
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Force 4 columns */
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
 
-.testimonial-card {
-    background: var(--white);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-align: left; /* Ensure text aligns left like the image */
-}
+        .testimonial-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: left; /* Ensure text aligns left like the image */
+        }
 
-.testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
 
-/* Yellow Stars */
-.stars {
-    color: #FBBF24; /* Golden Yellow */
-    display: flex;
-    gap: 2px;
-    margin-bottom: 1rem;
-}
+        /* Yellow Stars */
+        .stars {
+            color: #FBBF24; /* Golden Yellow */
+            display: flex;
+            gap: 2px;
+            margin-bottom: 1rem;
+        }
 
-/* Quote Icon & Text Layout */
-.quote-wrapper {
-    display: flex;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-    flex-grow: 1; /* Pushes footer to the bottom */
-}
+        /* Quote Icon & Text Layout */
+        .quote-wrapper {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            flex-grow: 1; /* Pushes footer to the bottom */
+        }
 
-.quote-icon {
-    color: #BFDBFE; /* Light Blue */
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    margin-top: -2px;
-}
+        .quote-icon {
+            color: #BFDBFE; /* Light Blue */
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            margin-top: -2px;
+        }
 
-.review-text {
-    font-size: 0.95rem;
-    color: var(--text-dark);
-    line-height: 1.6;
-    font-weight: 400;
-}
+        .review-text {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-weight: 400;
+        }
 
-/* Footer with Avatar Placeholder */
-.card-footer {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #f3f4f6;
-    margin-top: auto;
-}
+        /* Footer with Avatar Placeholder */
+        .card-footer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #f3f4f6;
+            margin-top: auto;
+        }
 
-.avatar-img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    border: 1px solid #e5e7eb;
-}
+        .avatar-img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 1px solid #e5e7eb;
+        }
 
-.client-info h4 {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--primary-text);
-    margin: 0 0 0.2rem 0;
-}
+        .client-info h4 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--primary-text);
+            margin: 0 0 0.2rem 0;
+        }
 
-.client-info span {
-    font-size: 0.85rem;
-    color: var(--text-light);
-}
+        .client-info span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
 
-/* Responsive: 2 columns on tablet, 1 on mobile */
-@media (max-width: 1024px) {
-    .testimonial-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+        /* Responsive: 2 columns on tablet, 1 on mobile */
+        @media (max-width: 1024px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
 
-@media (max-width: 650px) {
-    .testimonial-grid {
-        grid-template-columns: 1fr;
-    }
-}
+        @media (max-width: 650px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
 
         .icon-btn {
             border: 1px solid rgba(0, 71, 171, 0.18);
@@ -999,7 +983,6 @@
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <!-- Header/Navbar -->
     <header>
         <nav>
             <a href="#home" class="logo">
@@ -1009,7 +992,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#leadership">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="menu-toggle" id="menuToggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Open menu">
@@ -1022,7 +1005,6 @@
 
     <main id="main">
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Maximizing Value Through Strategic Real Estate Investment</h1>
@@ -1031,27 +1013,22 @@
         </div>
     </section>
 
-
-    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <h2 class="section-title">Our Core Business Lines</h2>
             <div class="services-grid">
-                <!-- Service Card 1 -->
                 <div class="service-card">
                     <div class="service-icon">🏗️</div>
                     <h3>Property Construction & Development</h3>
                     <p>Planning, financing, and constructing high-quality residential and commercial properties. We deliver modern, structurally sound developments that meet market demand.</p>
                 </div>
 
-                <!-- Service Card 2 -->
                 <div class="service-card">
                     <div class="service-icon">📍</div>
                     <h3>Land Acquisition & Trading</h3>
                     <p>Strategically acquiring undeveloped land with high potential and offering vetted, legally clear land to private buyers and developers.</p>
                 </div>
 
-                <!-- Service Card 3 -->
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Investment Management</h3>
@@ -1061,7 +1038,6 @@
         </div>
     </section>
 
-    <!-- Value Proposition Section -->
     <section class="value-prop">
         <div class="container">
             <h2 class="section-title">Why Choose Us</h2>
@@ -1101,112 +1077,66 @@
         </div>
     </section>
 
-   <section class="testimonials" id="testimonials">
-    <div class="container">
-        <h2 class="section-title">Trusted by Investors & Partners</h2>
-        <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem; margin-top: -2rem;">
-            See why clients rely on Mountain Bridge for secure land acquisition and high-value project delivery.
-        </p>
-
-<div class="testimonial-grid">
-    
-    <div class="testimonial-card">
-        <div class="stars">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <div class="quote-wrapper">
-            <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
-            <p class="review-text">"Secured a 50-acre parcel in a high-growth corridor. The due diligence was rigorous, and we received clean titles within 14 days of closing."</p>
-        </div>
-        <div class="card-footer">
-            <img src="person.svg" alt="Client Profile" class="avatar-img">
-            <div class="client-info">
-                <h4>Verified Acquisition</h4>
-                <span>Land Trading</span>
+    <section class="about values-section" id="values">
+        <div class="container">
+            
+            <div class="identity-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <div class="identity-card" style="background: white; padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--primary-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">Our Mission</h3>
+                    <p style="color: var(--text-light);">To empower our clients by providing secure, transparent, and high-yield real estate opportunities that serve as a reliable bridge between their current aspirations and future financial legacies.</p>
+                </div>
+                <div class="identity-card" style="background: white; padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--primary-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">Our Vision</h3>
+                    <p style="color: var(--text-light);">To be the premier catalyst for wealth creation in East Africa, recognized for building stronger communities and elevating lives through innovative and ethical real estate investment.</p>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="testimonial-card">
-        <div class="stars">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <div class="quote-wrapper">
-             <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
-            <p class="review-text">"Mountain Bridge delivered our 40-unit residential project two months ahead of schedule, with superior finish quality that drove 100% occupancy."</p>
-        </div>
-        <div class="card-footer">
-            <img src="person.svg" alt="Client Profile" class="avatar-img">
-            <div class="client-info">
-                <h4>Property Development</h4>
-                <span>Construction</span>
+            <h2 class="section-title">Our BASE Values</h2>
+            <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">B</div>
+                    <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Bold Integrity</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Radical transparency. Every transaction is secure and every promise is kept.</p>
+                </div>
+                <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">A</div>
+                    <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Accountability</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">We take ownership of your journey, delivering excellence from site visit to title deed.</p>
+                </div>
+                <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">S</div>
+                    <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Strategic Foresight</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">We anticipate market shifts to give our investors a first-mover advantage.</p>
+                </div>
+                <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">E</div>
+                    <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Empathy</h4>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">Real estate is personal. We listen to your goals and build solutions that fit your life.</p>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div class="testimonial-card">
-        <div class="stars">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
         </div>
-        <div class="quote-wrapper">
-             <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
-            <p class="review-text">"Structured a transparent joint venture for our commercial hub project. Their governance and quarterly reporting gave us total confidence in the asset's performance."</p>
-        </div>
-        <div class="card-footer">
-            <img src="person.svg" alt="Client Profile" class="avatar-img">
-            <div class="client-info">
-                <h4>Joint Venture</h4>
-                <span>Investment Management</span>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="testimonial-card">
-        <div class="stars">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-        </div>
-        <div class="quote-wrapper">
-             <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
-            <p class="review-text">"Efficiently managed the land amalgamation process for our industrial park, solving complex title issues and increasing the asset value by 30% in one year."</p>
-        </div>
-        <div class="card-footer">
-            <img src="person.svg" alt="Client Profile" class="avatar-img">
-            <div class="client-info">
-                <h4>Industrial Park</h4>
-                <span>Asset Enhancement</span>
-            </div>
-        </div>
-    </div>
-
-
-    </div>
- <div class="partners" aria-label="Trust highlights">
-                <div class="partner-chip">Verified Due Diligence</div>
-                <div class="partner-chip">Structured Deal Flow</div>
-                <div class="partner-chip">Quality Development</div>
-                <div class="partner-chip">Transparent Governance</div>
+    <section class="about" id="leadership">
+        <div class="container">
+            <div class="ceo-feature" style="display: flex; gap: 3rem; align-items: center; margin-bottom: 5rem; flex-wrap: wrap;">
+                <div class="ceo-image" style="flex: 1; min-width: 300px;">
+                    <img src="madam.jpeg" alt="Rita Wanjiru, CEO" style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+                <div class="ceo-text" style="flex: 1.5; min-width: 300px;">
+                    <h4 style="color: var(--primary-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Leadership</h4>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text-dark);">Rita Wanjiru</h2>
+                    <blockquote style="font-size: 1.25rem; font-style: italic; color: var(--text-dark); border-left: 4px solid var(--primary-blue); padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                        "Most people see real estate as just land, but I see it as the sturdiest bridge to a family's legacy. We turn high-potential properties into wealth."
+                    </blockquote>
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
+                        As CEO of Mountain Bridge Investment Company Limited, Rita is a visionary leader dedicated to elevating the standard of property ownership in Kenya. With a philosophy rooted in financial freedom, she has led the company to outperform traditional asset classes, helping clients achieve an average 18% annual growth.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-</section>
-
-           
 
     <section class="faq" id="faq">
         <div class="container">
@@ -1231,7 +1161,7 @@
                         <span>Do you offer partnership or co-investment structures?</span>
                         <span class="faq-chevron" aria-hidden="true">⌄</span>
                     </summary>
-                    <div class="faq-answer">Co-investment structures. We structure investment participation for qualified partners across construction and land transactions. Terms are defined through transparent governance, risk controls, and aligned return expectations.</div>
+                    <div class="faq-answer">We structure investment participation for qualified partners across construction and land transactions. Terms are defined through transparent governance, risk controls, and aligned return expectations.</div>
                 </details>
                 <details class="faq-item">
                     <summary>
@@ -1244,65 +1174,110 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about" id="about">
-    <div class="container">
-        
-        <div class="ceo-feature" style="display: flex; gap: 3rem; align-items: center; margin-bottom: 5rem; flex-wrap: wrap;">
-            <div class="ceo-image" style="flex: 1; min-width: 300px;">
-                <img src="madam.jpeg" alt="Rita Wanjiru, CEO" style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Trusted by Investors & Partners</h2>
+            <p style="text-align: center; color: var(--text-light); margin-bottom: 2rem; margin-top: -2rem;">
+                See why clients rely on Mountain Bridge for secure land acquisition and high-value project delivery.
+            </p>
+
+            <div class="testimonial-grid">
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="quote-wrapper">
+                        <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
+                        <p class="review-text">"Secured a 50-acre parcel in a high-growth corridor. The due diligence was rigorous, and we received clean titles within 14 days of closing."</p>
+                    </div>
+                    <div class="card-footer">
+                        <img src="person.svg" alt="Client Profile" class="avatar-img">
+                        <div class="client-info">
+                            <h4>Verified Acquisition</h4>
+                            <span>Land Trading</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="quote-wrapper">
+                        <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
+                        <p class="review-text">"Mountain Bridge delivered our 40-unit residential project two months ahead of schedule, with superior finish quality that drove 100% occupancy."</p>
+                    </div>
+                    <div class="card-footer">
+                        <img src="person.svg" alt="Client Profile" class="avatar-img">
+                        <div class="client-info">
+                            <h4>Property Development</h4>
+                            <span>Construction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="quote-wrapper">
+                        <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
+                        <p class="review-text">"Structured a transparent joint venture for our commercial hub project. Their governance and quarterly reporting gave us total confidence in the asset's performance."</p>
+                    </div>
+                    <div class="card-footer">
+                        <img src="person.svg" alt="Client Profile" class="avatar-img">
+                        <div class="client-info">
+                            <h4>Joint Venture</h4>
+                            <span>Investment Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <div class="quote-wrapper">
+                        <svg class="quote-icon" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 8.44772 14.017 9V11C14.017 11.5523 13.5693 12 13.017 12H12.017V5H22.017V15C22.017 18.3137 19.3307 21 16.017 21H14.017ZM5.01697 21L5.01697 18C5.01697 16.8954 5.9124 16 7.01697 16H10.017C10.5693 16 11.017 15.5523 11.017 15V9C11.017 8.44772 10.5693 8 10.017 8H6.01697C5.46468 8 5.01697 8.44772 5.01697 9V11C5.01697 11.5523 4.56925 12 4.01697 12H3.01697V5H13.017V15C13.017 18.3137 10.3307 21 7.01697 21H5.01697Z"/></svg>
+                        <p class="review-text">"Efficiently managed the land amalgamation process for our industrial park, solving complex title issues and increasing the asset value by 30% in one year."</p>
+                    </div>
+                    <div class="card-footer">
+                        <img src="person.svg" alt="Client Profile" class="avatar-img">
+                        <div class="client-info">
+                            <h4>Industrial Park</h4>
+                            <span>Asset Enhancement</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="ceo-text" style="flex: 1.5; min-width: 300px;">
-                <h4 style="color: var(--primary-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem;">Leadership</h4>
-                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: var(--text-dark);">Rita Wanjiru</h2>
-                <blockquote style="font-size: 1.25rem; font-style: italic; color: var(--text-dark); border-left: 4px solid var(--primary-blue); padding-left: 1.5rem; margin-bottom: 1.5rem;">
-                    "Most people see real estate as just land, but I see it as the sturdiest bridge to a family's legacy. We turn high-potential properties into wealth."
-                </blockquote>
-                <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1rem;">
-                    As CEO of Mountain Bridge Investment Company Limited, Rita is a visionary leader dedicated to elevating the standard of property ownership in Kenya. With a philosophy rooted in financial freedom, she has led the company to outperform traditional asset classes, helping clients achieve an average 18% annual growth.
-                </p>
+            
+            <div class="partners" aria-label="Trust highlights">
+                <div class="partner-chip">Verified Due Diligence</div>
+                <div class="partner-chip">Structured Deal Flow</div>
+                <div class="partner-chip">Quality Development</div>
+                <div class="partner-chip">Transparent Governance</div>
             </div>
         </div>
+    </section>
 
-        <div class="identity-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
-            <div class="identity-card" style="background: white; padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--primary-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">Our Mission</h3>
-                <p style="color: var(--text-light);">To empower our clients by providing secure, transparent, and high-yield real estate opportunities that serve as a reliable bridge between their current aspirations and future financial legacies.</p>
-            </div>
-            <div class="identity-card" style="background: white; padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--primary-blue); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark);">Our Vision</h3>
-                <p style="color: var(--text-light);">To be the premier catalyst for wealth creation in East Africa, recognized for building stronger communities and elevating lives through innovative and ethical real estate investment.</p>
-            </div>
-        </div>
-
-        <h2 class="section-title">Our BASE Values</h2>
-        <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
-            <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">B</div>
-                <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Bold Integrity</h4>
-                <p style="font-size: 0.9rem; color: var(--text-light);">Radical transparency. Every transaction is secure and every promise is kept.</p>
-            </div>
-            <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">A</div>
-                <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Accountability</h4>
-                <p style="font-size: 0.9rem; color: var(--text-light);">We take ownership of your journey, delivering excellence from site visit to title deed.</p>
-            </div>
-            <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">S</div>
-                <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Strategic Foresight</h4>
-                <p style="font-size: 0.9rem; color: var(--text-light);">We anticipate market shifts to give our investors a first-mover advantage.</p>
-            </div>
-            <div class="value-item" style="background: #F8F9FA; padding: 2rem; border-radius: 8px; text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-blue); margin-bottom: 0.5rem;">E</div>
-                <h4 style="margin-bottom: 0.5rem; font-weight: 700;">Empathy</h4>
-                <p style="font-size: 0.9rem; color: var(--text-light);">Real estate is personal. We listen to your goals and build solutions that fit your life.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -1365,7 +1340,6 @@
 
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-left">
             <p>&copy; 2026 Mountain Bridge Investment Ltd. All rights reserved.</p>
@@ -1487,24 +1461,6 @@
                 track('cta_click', { cta: 'explore_services' });
             });
         }
-
-        // Header Scroll Effect
-        // let lastScroll = 0;
-        // const header = document.querySelector('header');
-
-        // window.addEventListener('scroll', () => {
-        //     const currentScroll = window.pageYOffset;
-        //     
-        //     if (currentScroll > 100) {
-        //         header.style.background = 'rgba(255, 255, 255, 0.95)';
-        //         header.style.backdropFilter = 'blur(10px)';
-        //     } else {
-        //         header.style.background = 'var(--white)';
-        //         header.style.backdropFilter = 'none';
-        //     }
-        //     
-        //     lastScroll = currentScroll;
-        // });
 
         if (backToTopBtn) {
             backToTopBtn.addEventListener('click', () => {
